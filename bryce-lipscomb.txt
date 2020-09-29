@@ -1,5 +1,5 @@
 Bryce Lipscomb
-https://codepen.io/atcriteria/pen/qBZwwdO
+https://codepen.io/atcriteria/full/qBZwwdO
 
 1. What is Semantic HTML? 
 	HTML elements that are descriptive, such as <header>, <nav>, <footer>, rather than containers such as <div>
