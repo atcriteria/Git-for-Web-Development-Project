@@ -1,0 +1,90 @@
+https://codepen.io/atcriteria/pen/qBZwwdO
+
+1. What is Semantic HTML? 
+	HTML elements that are descriptive, such as <header>, <nav>, <footer>, rather than containers such as <div>
+2. What is HTML used for? 
+	HTML is a markup language used to format text and content for the web.
+3. What is an attribute and where do we put it? 
+	Attributes are inserted in HTML elements for various reasons between being more descriptive or changing the functionality completely. <img src="location" alt="picture"> .. src and alt are both attributes
+4. What is the h1 tag used for? How many times should I use it on a page?
+	H1 is used for a general header or title, and should be used where necessary to break apart sections of information. H2, H3, H4, etc could be used for sub headers when needed.
+5. Name two tags that have required attributes
+	<img> must contain src to point to an image, <a> must contain href in order to actually link/anchor to other content.
+6. What do we put in the head of our HTML document? 
+	Elements that work on the back end of the web page to define characteristics about the webpage, define keywords for search engines, charsets, as well as other meta information.
+7. What is an id? 
+	ID is an attribute that can be used to any HTML element to make it unique, specifically in terms of styling specific elements.
+8. What elements can I add an id to? 
+	Any element.
+9. How many times can I use the same id on a page? 
+	One
+10. What is a class? 
+	A class is like an ID except that it can be used to uniquelly identify many different elements rather than a single element.
+11. What elements can I add a class to? 
+	Any element.
+12. How many times can I use the same class on a page? 
+	Multiple.
+13. How do I get my link to open in a new tab?
+	The target="blank" attribute
+14. What is the alt attribute in the image tag used for? 
+	For accessibility.
+15. How do I reference an id?
+	#idName{}
+16. What is the difference between a section and a div
+	Section is a semantic element. Both are generic containers.
+17. What is CSS used for? 
+	Styling is used to well, style a webpage. Specifically HTML documents. Everything from color, animations, font, cont sizes, box sizes, shapes. Anything design related.
+18. How to we select an element? Example - every h2 on the page
+	Specifiy the element, h2{}, h1{}, or h4{}
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	You should use an ID for a specific element such as a header or single image, and a class when constructing something like a navigation bar where multiple links will ideally be styled the same.
+20. How do we select classes in CSS?
+	.thisIsTheClass{}
+21. How do we select a p element with a single class of “human””?
+	.human{}
+22. What is a parent child selector? When would this be useful? 
+	>, should be used to specifiy extra conditions that must be meant to style an element. Such as div > p {} will style all p's where the parent is a div.
+23. How do you select all links within a div with the class of sidebar?
+	either .sidebar{} to select the class, or div > .sidebar{} to specify only the sidebar class if the parent object is a div.
+24. What is a pseudo selector?
+	An attribute that can be added to an element in CSS for specificity, such as a:visited{} to style the anchor if it has been visited, a:hover, a:link, etc.
+25. What do we use the change the spacing between lines?
+	line-spacing: 5px;
+26. What do we use to change the spacing between letters?
+	letter-spacing: 5px;
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	text-transform: uppercase; will uppercase all letters, text-transform: lowercase, will lowercase all letters, text-transform: capitalize, will capitalize the first letter of each word
+28. How do I add a 1px border around my div that is dotted and black?
+	border-style: dotted, border-color: black;
+29. How do I select everything on the page? 
+	*{}, star selector
+30. How do I write a comment in CSS?
+	/* */
+31. How do I find out what file I am in, when I am using the command line? 
+	pwd, print working directory
+32. Using the command line - how do I see a list of files/folders in my current folder?
+	ls
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	rm, if using the -r switch you could recursively delete the entire directory you're working within if you specify it incorrectly
+34. Why should I use version control? 
+	Redundancy
+35. How often should I commit to github?
+	when substantial changes have been made
+36. What is the command we would use to push our repo up to github? 
+	git push
+37. Walk me through Lambda's git flow. 
+	fork the content, clone it into the directory we work in, git checkout -b first-last in order to create a new branch, git add . to save all of the changes, git commit -m"message" to commit the files, then git push
+	Should also add peer mentor as a contributor so they can review the file.
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+	Block level elements always create a new line after the closing bracket while inline level elements do not.
+2. What happens when an element is positioned absolutely? 
+	The element aligns itself along the closest parent element, or the body if there is no parent element.
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	You could give it max-width and min-width to keep it from expanding or shrinking too much while still keeping it responsive.
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	<aside><nav><div>, <a><span>, <img> is inline-block by default
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+	The box model basically means that each element is contained within a box, with borders, pagging, margins, wrapped around it that we can adjust. In order to stack several of these boxes next to one another, such as div's, the white space between them can be removed with comments. <div></div><!-- --><div></div>
