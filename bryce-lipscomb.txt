@@ -1,3 +1,4 @@
+Bryce Lipscomb
 https://codepen.io/atcriteria/pen/qBZwwdO
 
 1. What is Semantic HTML? 
